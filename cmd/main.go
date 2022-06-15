@@ -2,7 +2,8 @@ package main
 
 import (
     "github.com/gin-gonic/gin"
-    "github.com/caiosousaf/go-gin-api-medium/pkg/common/db.go"
+    "github.com/caiosousaf/go-gin-api-medium/pkg/books"
+    "github.com/caiosousaf/go-gin-api-medium/pkg/common/db"
     "github.com/spf13/viper"
 )
 
@@ -14,14 +15,10 @@ func main() {
     dbUrl := viper.Get("DB_URL").(string)
 
     r := gin.Default()
-    db.Init(dbUrl)
+    h := db.Init(dbUrl)
 
-    r.GET("/", func(c *gin.Context) {
-        c.JSON(200, gin.H{
-            "port": port,
-            "dbUrl": dbUrl,
-        })
-    })
+    books.RegisterRoutes(r, h)
+    // register more routes here
 
     r.Run(port)
 }
