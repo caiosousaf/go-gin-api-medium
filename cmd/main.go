@@ -2,7 +2,7 @@ package main
 
 import (
     "github.com/gin-gonic/gin"
-    "github.com/caiosousaf/go-gin-api-medium/pkg/common/db"
+    "github.com/caiosousaf/go-gin-api-medium/pkg/common/db.go"
     "github.com/spf13/viper"
 )
 
