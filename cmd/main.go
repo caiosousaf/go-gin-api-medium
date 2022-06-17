@@ -1,8 +1,9 @@
 package main
 
 import (
-	"TESTE/pkg/people"
-
+	"github.com/caiosousaf/go-gin-api-medium/pkg/people"
+    "github.com/caiosousaf/go-gin-api-medium/pkg/teams"
+    "github.com/caiosousaf/go-gin-api-medium/pkg/projects"
 	"github.com/caiosousaf/go-gin-api-medium/pkg/books"
 	"github.com/caiosousaf/go-gin-api-medium/pkg/common/db"
 	"github.com/gin-gonic/gin"

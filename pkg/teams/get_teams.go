@@ -7,7 +7,7 @@ import (
     "github.com/caiosousaf/go-gin-api-medium/pkg/common/models"
 )
 
-func (h handler) GetProjects(c *gin.Context) {
+func (h handler) GetTeams(c *gin.Context) {
     var teams []models.Team
 
     if result := h.DB.Find(&teams); result.Error != nil {
