@@ -8,7 +8,7 @@ Makefile:2: *** missing separator.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun 17 09:05:31 2022
+# Make data base, printed on Fri Jun 17 09:24:07 2022
 
 # Variables
 
@@ -41,7 +41,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/brisa/go-gin-api-medium
+CURDIR := /home/brisa/Documentos/Teste/api_desafio_BrisaNet
 # makefile
 SHELL = /bin/sh
 # environment
@@ -113,7 +113,7 @@ DISPLAY = :1
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /home/brisa/go-gin-api-medium
+PWD = /home/brisa/Documentos/Teste/api_desafio_BrisaNet
 # default
 .LOADED := 
 # environment
@@ -153,7 +153,7 @@ SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-dd040d11-371e-410e-8eee-b459bd7f555e.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-ce91d2b9-68d9-415d-bbdb-8b393ed45d09.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -223,9 +223,9 @@ VSCODE_PID = 4982
 
 # Directories
 
-# . (device 66307, inode 10488906): 9 files, no impossibilities.
+# . (device 66307, inode 10358626): 12 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -265,12 +265,12 @@ server:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 15 / storage = 111 B / avg = 7 B
-# current buf: size = 8162 B / used = 111 B / count = 15 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 18 / storage = 134 B / avg = 7 B
+# current buf: size = 8162 B / used = 134 B / count = 18 / avg = 7 B
 
-# strcache performance: lookups = 20 / hit rate = 25%
+# strcache performance: lookups = 23 / hit rate = 21%
 # hash-table stats:
-# Load=15/8192=0%, Rehash=0, Collisions=1/20=5%
-# Finished Make data base on Fri Jun 17 09:05:31 2022
+# Load=18/8192=0%, Rehash=0, Collisions=1/23=4%
+# Finished Make data base on Fri Jun 17 09:24:07 2022
 
  
