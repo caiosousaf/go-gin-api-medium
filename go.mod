@@ -1,4 +1,4 @@
-module TESTE
+module github.com/caiosousaf/go-gin-api-medium
 
 go 1.18
 
