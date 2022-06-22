@@ -1,4 +1,4 @@
-package books
+package tasks
 
 import (
     "net/http"
@@ -7,13 +7,13 @@ import (
     "github.com/caiosousaf/go-gin-api-medium/pkg/common/models"
 )
 
-func (h handler) GetBooks(c *gin.Context) {
-    var books []models.Book
+func (h handler) GetTasks(c *gin.Context) {
+    var tasks []models.Task
 
-    if result := h.DB.Find(&books); result.Error != nil {
+    if result := h.DB.Find(&tasks); result.Error != nil {
         c.AbortWithError(http.StatusNotFound, result.Error)
         return
     }
 
-    c.JSON(http.StatusOK, &books)
+    c.JSON(http.StatusOK, &tasks)
 }

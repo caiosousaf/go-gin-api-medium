@@ -2,9 +2,10 @@ package models
 
 import _"gorm.io/gorm"
 
-type Team struct {
+type Task struct {
     ID   		uint64 	`gorm:"primary_key" json:"id"`
-	Name      	string 	`json:"name"`
-	ID_project 	uint64 	`json:"-"`
+	Title      	string 	`json:"title"`
+	Description string  `json:"Description"`
+	ID_project 	uint 	`json:"-"`
 	Project		Project `gorm:"foreignkey:ProjectID:constraint:onUpadate:CASCADE,onDelete:CASCADE" json:"project"`
 }
