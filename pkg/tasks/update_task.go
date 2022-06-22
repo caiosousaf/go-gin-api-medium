@@ -10,6 +10,7 @@ import (
 type UpdateTaskRequestBody struct {
     Title  string  `json:"title"`
     Description string  `json:"Description"`
+    Project		models.Project `gorm:"foreignkey:ProjectID:constraint:onUpadate:CASCADE,onDelete:CASCADE" json:"project"`
 }
 
 func (h handler) UpdateTask(c *gin.Context) {

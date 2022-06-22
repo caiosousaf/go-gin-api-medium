@@ -10,7 +10,7 @@ import (
 type AddTaskRequestBody struct {
     Title       string `json:"title"`
 	Description string  `json:"Description"`
-    Project		Project `gorm:"foreignkey:ProjectID:constraint:onUpadate:CASCADE,onDelete:CASCADE" json:"project"`
+    Project		models.Project `gorm:"foreignkey:ProjectID:constraint:onUpadate:CASCADE,onDelete:CASCADE" json:"project"`
 }
 
 func (h handler) AddTask(c *gin.Context) {
