@@ -8,7 +8,8 @@ import (
 )
 
 type AddTeamRequestBody struct {
-	Name string `json:"name"`
+	Name        string `json:"name"`
+    Project		models.Project `gorm:"foreignkey:ProjectID:constraint:onUpadate:CASCADE,onDelete:CASCADE" json:"project"`
 }
 
 func (h handler) AddTeam(c *gin.Context) {
@@ -23,6 +24,7 @@ func (h handler) AddTeam(c *gin.Context) {
     var team models.Team
 
     team.Name = body.Name
+    team.Project = body.Project
 
     if result := h.DB.Create(&team); result.Error != nil {
         c.AbortWithError(http.StatusNotFound, result.Error)

@@ -10,6 +10,8 @@ import (
 type UpdatePersonRequestBody struct {
 	Name    	string `json:"name"`
     Profissao 	string `json:"profissao"`
+    Team		models.Team    `gorm:"foreignkey:TeamID:constraint:onUpadate:CASCADE,onDelete:CASCADE" json:"team"`
+    Task        models.Task    `gorm:"foreignkey:TaskID:constraint:onUpadate:CASCADE,onDelete:CASCADE" json:"task"`
 }
 
 func (h handler) UpdatePerson(c *gin.Context) {
@@ -31,6 +33,8 @@ func (h handler) UpdatePerson(c *gin.Context) {
 
     person.Name = body.Name
     person.Profissao = body.Profissao
+    person.Team = body.Team
+    person.Task = body.Task
 
     h.DB.Save(&person)
 
