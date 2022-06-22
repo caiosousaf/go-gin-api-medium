@@ -8,7 +8,7 @@ Makefile:2: *** missing separator.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun 22 09:04:47 2022
+# Make data base, printed on Wed Jun 22 09:10:06 2022
 
 # Variables
 
@@ -41,7 +41,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/brisa/Documentos/Teste/api_desafio_BrisaNet
+CURDIR := /home/brisa/go-gin-api-medium
 # makefile
 SHELL = /bin/sh
 # environment
@@ -115,7 +115,7 @@ DISPLAY = :1
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /home/brisa/Documentos/Teste/api_desafio_BrisaNet
+PWD = /home/brisa/go-gin-api-medium
 # default
 .LOADED := 
 # environment
@@ -157,7 +157,7 @@ SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-e9271d61-edc5-4c03-8229-b8c35446765b.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-432b3539-87f1-45d3-bac8-24f7536c14af.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -173,7 +173,6 @@ MAKE_COMMAND := make
 # default
 .VARIABLES := 
 # automatic
- 
 *F = $(notdir $*)
 # environment
 LANGUAGE = pt_BR:pt:en
@@ -230,7 +229,7 @@ VSCODE_PID = 5830
 
 # Directories
 
-# . (device 66307, inode 10358626): 13 files, no impossibilities.
+# . (device 66307, inode 10488906): 13 files, no impossibilities.
 
 # 13 files, no impossibilities in 1 directories.
 
@@ -278,6 +277,6 @@ server:
 # strcache performance: lookups = 24 / hit rate = 20%
 # hash-table stats:
 # Load=19/8192=0%, Rehash=0, Collisions=1/24=4%
-# Finished Make data base on Wed Jun 22 09:04:47 2022
+# Finished Make data base on Wed Jun 22 09:10:06 2022
 
  

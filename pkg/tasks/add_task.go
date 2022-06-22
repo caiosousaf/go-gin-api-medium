@@ -8,8 +8,9 @@ import (
 )
 
 type AddTaskRequestBody struct {
-    Title      string `json:"title"`
+    Title       string `json:"title"`
 	Description string  `json:"Description"`
+    Project		Project `gorm:"foreignkey:ProjectID:constraint:onUpadate:CASCADE,onDelete:CASCADE" json:"project"`
 }
 
 func (h handler) AddTask(c *gin.Context) {
@@ -23,6 +24,7 @@ func (h handler) AddTask(c *gin.Context) {
 	var task models.Task
 	task.Title = body.Title
     task.Description = body.Description
+    task.Project = body.Project
 
 
 	if result := h.DB.Create(&task); result.Error != nil {
