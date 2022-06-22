@@ -6,5 +6,5 @@ type Team struct {
     ID   		uint64 	`gorm:"primary_key" json:"id"`
 	Name      	string 	`json:"name"`
 	ProjectID 	uint64 	`json:"-"`
-	Project		Project `gorm:"foreignkey:ProjectID:constraint:onUpadate:CASCADE,onDelete:CASCADE" json:"project"`
+	Project		Project `gorm:"foreignkey:ProjectID:constraint:OnUpadate:CASCADE,OnDelete:CASCADE" json:"project"`
 }

@@ -10,8 +10,8 @@ import (
 type AddPersonRequestBody struct {
     Name    	string `json:"name"`
     Profissao 	string `json:"profissao"`
-    Team		models.Team    `gorm:"foreignkey:TeamID:constraint:onUpadate:CASCADE,onDelete:CASCADE" json:"team"`
-    Task        models.Task    `gorm:"foreignkey:TaskID:constraint:onUpadate:CASCADE,onDelete:CASCADE" json:"task"`
+    Team		models.Team    `gorm:"foreignkey:TeamID:constraint:OnUpadate:CASCADE,OnDelete:CASCADE" json:"team"`
+    Task        models.Task    `gorm:"foreignkey:TaskID:constraint:OnUpadate:CASCADE,OnDelete:CASCADE" json:"task"`
 }
 
 func (h handler) AddPerson(c *gin.Context) {

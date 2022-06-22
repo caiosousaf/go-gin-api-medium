@@ -7,5 +7,5 @@ type Task struct {
 	Title      	string 	`json:"title"`
 	Description string  `json:"Description"`
 	ProjectID 	uint 	`json:"-"`
-	Project		Project `gorm:"foreignkey:ProjectID:constraint:onUpadate:CASCADE,onDelete:CASCADE" json:"project"`
+	Project		Project `gorm:"foreignkey:ProjectID:constraint:OnUpadate:CASCADE,OnDelete:CASCADE" json:"project"`
 }

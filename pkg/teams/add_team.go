@@ -9,7 +9,7 @@ import (
 
 type AddTeamRequestBody struct {
 	Name        string `json:"name"`
-    Project		models.Project `gorm:"foreignkey:ProjectID:constraint:onUpadate:CASCADE,onDelete:CASCADE" json:"project"`
+    Project		models.Project `gorm:"constraint:OnUpadate:CASCADE,OnDelete:CASCADE" json:"project"`
 }
 
 func (h handler) AddTeam(c *gin.Context) {
