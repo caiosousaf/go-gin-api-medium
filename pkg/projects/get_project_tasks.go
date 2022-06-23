@@ -14,7 +14,7 @@ type TasksProjeto struct {
 	Nome_Pessoa 	string  `json:"nome_pessoa"`
 }
 
-func (h handler) GetProjetoTasks (c *gin.Context) {
+func (h handler) GetProjectTasks (c *gin.Context) {
 	var tasks []TasksProjeto
 
 	id := c.Param("id")

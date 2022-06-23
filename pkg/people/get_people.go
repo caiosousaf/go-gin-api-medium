@@ -14,7 +14,7 @@ type GetPessoasRequestBody struct {
 	EquipeID		int 	`json:"id_equipe"`
 }
 
-func (h handler) GetPessoas(c *gin.Context) {
+func (h handler) GetPeople(c *gin.Context) {
 	var pessoas []models.Pessoa
 
 	if result := h.DB.Find(&pessoas); result.Error != nil {

@@ -12,7 +12,7 @@ type UpdateProjetoRequestBody struct {
 	Equipe 			models.Equipe `gorm:"constraint:OnUpdate:CASCADE,OnDelete:SET NULL;" json:"equipe"`
 }
 
-func (h handler) UpdateProjeto(c *gin.Context) {
+func (h handler) UpdateProject(c *gin.Context) {
 	id := c.Param("id")
 	body := UpdateProjetoRequestBody{}
 

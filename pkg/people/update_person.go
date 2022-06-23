@@ -13,7 +13,7 @@ type UpdatePessoaRequestBody struct {
 	Equipe 		models.Equipe `json:"equipe"`
 }
 
-func (h handler) UpdatePessoa(c *gin.Context) {
+func (h handler) UpdatePerson(c *gin.Context) {
 	id := c.Param("id")
 	body := UpdatePessoaRequestBody{}
 

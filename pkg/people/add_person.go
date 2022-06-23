@@ -13,7 +13,7 @@ type AddPessoaRequestBody struct {
 	Equipe			models.Equipe `gorm:"constraint:OnUpdate:CASCADE,OnDelete:SET NULL;" json:"equipe"`
 }
 
-func (h handler) AddPessoa(c *gin.Context) {
+func (h handler) AddPerson(c *gin.Context) {
 	body := AddPessoaRequestBody{}
 
 	// getting request's body

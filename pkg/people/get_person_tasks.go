@@ -17,7 +17,7 @@ type Result struct {
 	Descricao_Task	 string	`json:"descricao_task"`
 }
 
-func (h handler) GetTaskPessoa(c *gin.Context) {
+func (h handler) GetTaskPerson(c *gin.Context) {
 	id := c.Param("id")
 
 	var result []Result

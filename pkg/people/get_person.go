@@ -8,7 +8,7 @@ import (
 )
 
 
-func (h handler) GetPessoa(c *gin.Context) {
+func (h handler) GetPerson(c *gin.Context) {
 	id := c.Param("id")
 
 	var pessoa models.Pessoa

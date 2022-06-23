@@ -11,7 +11,7 @@ type Membros struct {
 	Funcao_Pessoa 	string `json:"funcao_pessoa"`
 }
 
-func (h handler) GetEquipeMembros (c *gin.Context) {
+func (h handler) GetTeamMembers (c *gin.Context) {
 	id := c.Param("id")
 
 	var membros []Membros

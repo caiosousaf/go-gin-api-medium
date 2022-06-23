@@ -11,7 +11,7 @@ type AddEquipeRequestBody struct {
 	Nome_Equipe		string 			`json:"nome"`
 }
 
-func (h handler) AddEquipe(c *gin.Context) {
+func (h handler) AddTeam(c *gin.Context) {
 	body := AddEquipeRequestBody{}
 
 	// getting request's body

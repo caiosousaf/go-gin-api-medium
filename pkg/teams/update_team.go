@@ -11,7 +11,7 @@ type UpdateEquipeRequestBody struct {
 	Nome_Equipe string `json:"nome"`
 }
 
-func (h handler) UpdateEquipe(c *gin.Context) {
+func (h handler) UpdateTeam(c *gin.Context) {
 	id := c.Param("id")
 	body := UpdateEquipeRequestBody{}
 

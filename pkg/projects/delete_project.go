@@ -3,11 +3,11 @@ package projetos
 import (
 	"net/http"
 
-	"github.com/gin-gonic/gin"
-	"github.com/caiosousaf/go-gin-api-medium/pkg/common/models"
+    "github.com/gin-gonic/gin"
+    "github.com/caiosousaf/go-gin-api-medium/pkg/common/models"
 )
 
-func (h handler) GetProjeto(c *gin.Context) {
+func (h handler) DeleteProject(c *gin.Context) {
 	id := c.Param("id")
 
 	var projeto models.Projeto
@@ -16,5 +16,8 @@ func (h handler) GetProjeto(c *gin.Context) {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		return
 	}
-	c.JSON(http.StatusOK, &projeto)
+
+	h.DB.Delete(&projeto)
+
+	c.Status(http.StatusOK)
 }

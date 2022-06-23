@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/caiosousaf/go-gin-api-medium/pkg/pessoas"
-    "github.com/caiosousaf/go-gin-api-medium/pkg/equipes"
-    "github.com/caiosousaf/go-gin-api-medium/pkg/projetos"
+	"github.com/caiosousaf/go-gin-api-medium/pkg/people"
+    "github.com/caiosousaf/go-gin-api-medium/pkg/teams"
+    "github.com/caiosousaf/go-gin-api-medium/pkg/projects"
     "github.com/caiosousaf/go-gin-api-medium/pkg/tasks"
 	
 	"github.com/caiosousaf/go-gin-api-medium/pkg/common/db"
@@ -22,9 +22,9 @@ func main() {
     h := db.Init(dbUrl)
 
     
-    pessoas.RegisterRoutes(r, h)
-    projetos.RegisterRoutes(r, h)
-    equipes.RegisterRoutes(r, h)
+    people.RegisterRoutes(r, h)
+    projects.RegisterRoutes(r, h)
+    teams.RegisterRoutes(r, h)
     tasks.RegisterRoutes(r, h)
     // register more routes here
 

@@ -7,7 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func (h handler) GetProjetos(c *gin.Context) {
+func (h handler) GetProjects(c *gin.Context) {
 	var projetos []models.Projeto
 
 	if result := h.DB.Find(&projetos); result.Error != nil {
