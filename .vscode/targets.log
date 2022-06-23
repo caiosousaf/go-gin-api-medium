@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-Makefile:2: *** missing separator.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ Makefile:2: *** missing separator.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jun 22 10:01:42 2022
+# Make data base, printed on Wed Jun 22 11:30:39 2022
 
 # Variables
 
@@ -41,7 +39,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
 # makefile
-CURDIR := /home/brisa/Documentos/Teste/api_desafio_BrisaNet
+CURDIR := /home/brisa/go-gin-api-medium
 # makefile
 SHELL = /bin/sh
 # environment
@@ -115,7 +113,7 @@ DISPLAY = :1
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /home/brisa/Documentos/Teste/api_desafio_BrisaNet
+PWD = /home/brisa/go-gin-api-medium
 # default
 .LOADED := 
 # environment
@@ -157,7 +155,7 @@ SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-2a55e26b-d6c5-4d3f-9eca-867f29c0c957.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1001/vscode-ipc-8953eb93-175a-481a-ad0b-96078a498d76.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -229,7 +227,7 @@ VSCODE_PID = 26359
 
 # Directories
 
-# . (device 66307, inode 10358626): 13 files, no impossibilities.
+# . (device 66307, inode 10488906): 13 files, no impossibilities.
 
 # 13 files, no impossibilities in 1 directories.
 
@@ -241,7 +239,6 @@ VSCODE_PID = 26359
 
 # Not a target:
 all:
- 
 #  Command line target.
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -278,6 +275,8 @@ server:
 # strcache performance: lookups = 24 / hit rate = 20%
 # hash-table stats:
 # Load=19/8192=0%, Rehash=0, Collisions=1/24=4%
-# Finished Make data base on Wed Jun 22 10:01:42 2022
+# Finished Make data base on Wed Jun 22 11:30:39 2022
 
  
+Makefile:2: *** missing separator.  Stop.
+

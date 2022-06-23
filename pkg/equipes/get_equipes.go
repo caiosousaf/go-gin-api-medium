@@ -1,4 +1,4 @@
-package tasks
+package equipes
 
 import (
 	"net/http"
@@ -7,13 +7,13 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func (h handler) GetTasks(c *gin.Context) {
-	var tasks []models.Task
+func (h handler) GetEquipes(c *gin.Context) {
+	var equipes []models.Equipe
 
-	if result := h.DB.Find(&tasks); result.Error != nil {
+	if result := h.DB.Find(&equipes); result.Error != nil {
 		c.AbortWithError(http.StatusNotFound, result.Error)
 		return
 	}
-	
-	c.JSON(http.StatusOK, &tasks)
+
+	c.JSON(http.StatusOK, &equipes)
 }
